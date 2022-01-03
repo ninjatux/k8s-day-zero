@@ -1,0 +1,7 @@
+installed: true
+alertmanager:
+  alertmanagerSpec:
+    retention: 120h
+prometheus:
+  prometheusSpec:
+    retention: 14d

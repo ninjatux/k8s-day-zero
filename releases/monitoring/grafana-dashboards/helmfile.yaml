@@ -1,0 +1,12 @@
+bases:
+  - environments.yaml
+---
+releases:
+  - name: "grafana-dashboards"
+    chart: ./grafana-dashboards
+    wait: true
+    timeout: 180
+    atomic: true
+    cleanupOnFail: true
+    installed: {{ .Values.installed }}
+    namespace: {{ .Values.namespace | quote }}

@@ -1,0 +1,8 @@
+chart_version: 23.3.2
+installed: true
+alertmanager:
+  alertmanagerSpec:
+    retention: 120h
+prometheus:
+  prometheusSpec:
+    retention: 14d

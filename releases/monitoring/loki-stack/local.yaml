@@ -1,0 +1,7 @@
+alertmanager:
+  alertmanagerSpec:
+    retention: 1h
+prometheus:
+  prometheusSpec:
+    retention: 2h
+  

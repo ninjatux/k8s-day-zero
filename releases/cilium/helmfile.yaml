@@ -1,0 +1,31 @@
+bases:
+  - environments.yaml
+---
+repositories:
+  - name: cilium
+    url: https://helm.cilium.io/
+
+releases:
+  - name: cilium
+    chart: cilium/cilium
+    version: {{ .Values.chart_version | quote }}
+    wait: true
+    timeout: 180
+    atomic: true
+    cleanupOnFail: true
+    installed: {{ .Values.installed }}
+    namespace: {{ .Values.namespace | quote }}
+    values:
+      - prometheus:
+          enabled: {{ .Values.prometheus.enabled }}
+      - operator:
+          replicas: {{ .Values.operator.replicas }}
+          prometheus:
+            enabled: {{ .Values.operator.prometheus.enabled }}
+      - hubble:
+          relay:
+            enabled: {{ .Values.hubble.relay.enabled }}
+          ui:
+            enabled: {{ .Values.hubble.ui.enabled }}
+          metrics:
+            enabled: {{ .Values.hubble.metrics.enabled }}

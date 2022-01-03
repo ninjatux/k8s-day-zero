@@ -1,0 +1,29 @@
+# ref: https://docs.cilium.io/en/v1.10/helm-reference/
+chart_version: 1.10.6
+installed: true
+namespace: cilium
+hubble:
+  relay:
+    enabled: true 
+  ui:
+    enabled: true
+  metrics:
+    enabled:
+      - dns:query;ignoreAAAA
+      - drop
+      - tcp
+      - flow
+      - icmp
+      - http
+      - port-distribution
+    serviceMonitor:
+      enabled: true
+prometheus:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+operator:
+  prometheus:
+    enabled: true
+    serviceMonitor:
+      enabled: true

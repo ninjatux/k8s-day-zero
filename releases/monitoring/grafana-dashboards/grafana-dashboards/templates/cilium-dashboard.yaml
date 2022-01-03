@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    grafana_dashboard: "1"
+  name: grafana-cilium-dashboard
+data:
+  cilium-dashboard.json: |-
+    {{ .Files.Get "files/cilium-dashboard.json" | nindent 6 }}

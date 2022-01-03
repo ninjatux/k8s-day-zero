@@ -1,0 +1,10 @@
+environments:
+  default:
+    values:
+      - ../commons.yaml
+      - defaults.yaml
+  local:
+    values:
+      - ../commons.yaml
+      - defaults.yaml
+      - local.yaml

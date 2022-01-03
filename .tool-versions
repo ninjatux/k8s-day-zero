@@ -1,0 +1,5 @@
+kubectl 1.23.1
+helmfile 0.142.0
+helm 3.7.2
+minikube 1.24.0
+popeye v0.9.8

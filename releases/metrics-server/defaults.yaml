@@ -1,0 +1,3 @@
+chart_version: 3.7.0
+installed: true
+namespace: kube-system
