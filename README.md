@@ -4,16 +4,16 @@ Kubernetes Day Zero is a platoform based on Kubernetes that creates a setup to r
 
 ## To Do
 
-* [] improve documentation
-  * [] use github pages for docs
-  * [] add docs for adding custom dashboards
-* [] add `istio`
-* [] add example workloads
-* [] code to create kubernetes clusters on cloud:
-  * [] AWS on EKS
-  * [] Azure on AKS
-  * [] GCP on GKE
-* [] list other desired features here
+* [ ] improve documentation
+  * [ ] use github pages for docs
+  * [ ] add docs for adding custom dashboards
+* [ ] add `istio`
+* [ ] add example workloads
+* [ ] code to create kubernetes clusters on cloud:
+  * [ ] AWS on EKS
+  * [ ] Azure on AKS
+  * [ ] GCP on GKE
+* [ ] list other desired features here
 
 ## Setting up the local environment
 
