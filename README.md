@@ -1,19 +1,19 @@
 # Kubernetes Day Zero
 
-Kubernetes Day Zero is a platoform based on Kubernetes that creates a setup to run workloads leveraging the provided networking, security, observability, and service mesh stacks. It aims to become a ready to use full stack development platform that can be used to deliver your projects from the beginning of development. Locally, it runs on `minikube` and uses `helmfile` to deploy `helm` charts.
+Kubernetes Day Zero is a platform based on Kubernetes that creates a setup to run workloads leveraging the provided networking, security, observability, and service mesh stacks. It aims to become a full-stack development platform that allows teams to deliver projects right from the start. Locally, it runs on `minikube` and uses `helmfile` to deploy `helm` charts.
 
-## To Do
+## ToDo
 
 * [ ] improve documentation
   * [ ] use github pages for docs
-  * [ ] add docs for adding custom dashboards
+  * [ ] add docs for adding custom grafana dashboards
 * [ ] add `istio`
 * [ ] add example workloads
 * [ ] code to create kubernetes clusters on cloud:
   * [ ] AWS on EKS
   * [ ] Azure on AKS
   * [ ] GCP on GKE
-* [ ] list other desired features here
+* [ ] extend this todo list
 
 ## Setting up the local environment
 
@@ -41,3 +41,4 @@ rm hubble-linux-amd64.tar.gz{,.sha256sum}
 ## docs: https://docs.cilium.io/en/v1.10/gettingstarted/istio/
 curl -L https://github.com/cilium/istio/releases/download/1.10.4/cilium-istioctl-1.10.4-osx.tar.gz | tar xz
 ```
+
