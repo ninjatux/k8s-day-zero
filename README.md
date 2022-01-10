@@ -13,6 +13,7 @@ Kubernetes Day Zero is a platform based on Kubernetes that creates a setup to ru
   * [ ] AWS on EKS
   * [ ] Azure on AKS
   * [ ] GCP on GKE
+* [ ] Investigate grafana operator for enabling dashboards as CRD
 * [ ] extend this todo list
 
 ## Setting up the local environment
