@@ -1,6 +1,6 @@
-# Kubernetes Day Zero
+# Kubernetes Study Lab
 
-Kubernetes Day Zero is a platform based on Kubernetes that creates a setup to run workloads leveraging the provided networking, security, observability, and service mesh stacks. It aims to become a full-stack development platform that allows teams to deliver projects right from the start. Locally, it runs on `minikube` and uses `helmfile` to deploy `helm` charts.
+With this project, I attempted to create a lab for studying Kubernetes and its ecosystem of applications and tools. This is just for personal use, it's not intended to be used in production or professional environments.
 
 ## ToDo
 
@@ -25,7 +25,11 @@ Once `asdf` is installed, you can install the remaining tools following these co
 ```bash
 ## install support tools using asdf
 asdf install
+```
 
+Now let's install `cilium` related tools:
+
+```
 ## installs cilium cli
 curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz{,.sha256sum}
 sudo tar xzvfC cilium-darwin-amd64.tar.gz /usr/local/bin
@@ -42,4 +46,3 @@ rm hubble-linux-amd64.tar.gz{,.sha256sum}
 ## docs: https://docs.cilium.io/en/v1.10/gettingstarted/istio/
 curl -L https://github.com/cilium/istio/releases/download/1.10.4/cilium-istioctl-1.10.4-osx.tar.gz | tar xz
 ```
-
